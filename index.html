@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please complete this survery form with any of your querie or suggestion to improve our services.
+    </p>
+    <form id="survey-form">
+
+        <fieldset>
+            <label id="name-label">Entre you name<input id="name" type="text" placeholder="James" required />
+            </label>
+
+            <label id="email-label">Entre your email<input id="email" type="email" placeholder="james_smith@xyz.com"
+                    required />
+            </label>
+
+            <label id="number-label">
+                Entre your age(optional)<input id="number" type="number" min="12" max="120" placeholder="28" />
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                Which option best describes your current role?
+                <select id="dropdown">
+                    <option>Select current role</option>
+                    <option>Student</option>
+                    <option>Working proffesional</option>
+                </select>
+            </label>
+
+            <label class="dis">Select your gender</label>
+            <label>
+                <input type="radio" name="gender" value="1" />
+                male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="2" />
+                female
+            </label>
+            <label>
+                <input type="radio" name="gender" value="3" />
+                other
+            </label>
+            <label id="check">
+                What should be imporved?
+                <label>
+                    <input type="checkbox" value="1" />
+                    Challanges
+                </label>
+
+                <label>
+                    <input type="checkbox" value="2" />
+                    Lessons
+                </label>
+
+                <label>
+                    <input type="checkbox" value="3" />
+                    Articles
+                </label>
+                <label><input type="checkbox" value="4" />
+                    Projects
+                </label>
+        </fieldset>
+
+        <fieldset>
+            <label>
+                Any comments or suggestions?
+                <textarea rows="5" cols="50"></textarea>
+            </label>
+
+            <input type="submit" id="submit">
+        </fieldset>
+    </form>
+</body>
+
+</html>
